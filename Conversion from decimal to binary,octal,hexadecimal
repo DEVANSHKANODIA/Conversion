@@ -19,15 +19,15 @@ void decimalToOctal(int decimal) {
 }
 
 void decimalToHexadecimal(int decimal) {
-    char hex;
+    char hexa;
     while (decimal > 0) {
         int remainder = decimal % 16;
         if (remainder < 10) {
-            hex = '0' + remainder;
+            hexa = '0' + remainder;
         } else {
-            hex = 'A' + (remainder - 10);
+            hexa = 'A' + (remainder - 10);
         }
-        printf("%c", hex);
+        printf("%c", hexa);
         decimal = decimal / 16;
     }
 }
